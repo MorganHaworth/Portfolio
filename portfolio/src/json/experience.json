@@ -1,0 +1,80 @@
+{
+    "experience":[
+       {
+          "company":"Girls Who Code",
+          "title":"Summer Immersion Program Teaching Assistant",
+          "startDate":"May 2018",
+          "endDate":"August 2018",
+          "location":"Sunnyvale, CA",
+          "responsibilities":[
+             "I facilitated student learning of the program's curriculum.",
+             "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C."
+          ]
+       },
+       {
+          "company":"DoSpace",
+          "title":"Lead Instructor of a Girls Who Code club",
+          "startDate":"September 2018",
+          "endDate":"March 2019",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python.",
+             "I helped each student create a capstone."
+          ]
+       },
+       {
+          "company":"Union Pacific",
+          "title":"IT Intern",
+          "startDate":"October 2018",
+          "endDate":"May 2019",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I created portions of web pages that call services to display information.",
+             "I modified several services in order to retrieve desired data.",
+             "The technologies I used are AngularJS, HTML/CSS, Java, and PLSQL."
+          ]
+       },
+       {
+          "company":"Spreetail",
+          "title":"Software Engineering Intern",
+          "startDate":"May 2019",
+          "endDate":"August 2019",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I created backend services in .NET and Entity Framework to improve fulfillment center location management."
+          ]
+       },
+       {
+          "company":"Union Pacific",
+          "title":"IT Intern",
+          "startDate":"September 2019",
+          "endDate":"January 2020",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I setup an Angular8 app and Java backend for managing documents."
+          ]
+       },
+       {
+          "company":"DoSpace",
+          "title":"Lead Instructor for Hello Code",
+          "startDate":"October 2018",
+          "endDate":"Present",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I create and teach a weekly curriculum for adult students.",
+             "I teach HTML and CSS basics while answering student questions.",
+             "Over the course of five weeks, I help each student create a website."
+          ]
+       },
+       {
+          "company":"Mutual of Omaha",
+          "title":"Technology Intern",
+          "startDate":"January 2020",
+          "endDate":"Present",
+          "location":"Omaha, NE",
+          "responsibilities":[
+             "I created database connections for a healthcheck application."
+          ]
+       }
+    ]
+ }

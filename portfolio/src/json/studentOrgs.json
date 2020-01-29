@@ -1,0 +1,28 @@
+{
+    "studentOrgs":[
+       {
+          "club":"Association for Computing Machinery",
+          "position":"Officer",
+          "description":[
+             "I help organize ACM's weekly meetings and events.",
+             "I proctor and create questions for the UNO ACM programming competitions.",
+             "I attend hackathons and local programming competitions like ICPC."
+          ]
+       },
+       {
+          "club":"Association for Computing Machinery - Women",
+          "position":"Vice President",
+          "description":[
+             "I overlook and organize our chapter's activities",
+             "I connect with Omaha's tech community."
+          ]
+       },
+       {
+          "club":"Nullify",
+          "position":"Member",
+          "description":[
+             "I volunteer for the annual Nullify high school Capture the Flag competition."
+          ]
+       }
+    ]
+ }

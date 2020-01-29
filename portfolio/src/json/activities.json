@@ -1,0 +1,35 @@
+{
+    "activities":[
+       {
+          "activity":"HackIllinois",
+          "project":"grid-strategy",
+          "date":"February 2019",
+          "outcome":"1st place",
+          "description":[
+             "I created our demo showcasing grid-strategy in Jupyter Notebook.",
+             "I learned about code coverage, team collaboration with Git, and open source contributions."
+          ]
+       },
+       {
+          "activity":"CodePath",
+          "date":"Summer 2019",
+          "description":[
+             "Intermediate Software Engineering Algorithm Interview Prep Course"
+          ]
+       },
+       {
+          "activity":"Grace Hopper Conference National Scholarship Recipient",
+          "date":"Fall 2019"
+       },
+       {
+          "activity":"HackISU",
+          "description":[
+             "Spring 2018 and Fall 2018 Participant"
+          ]
+       },
+       {
+          "activity": "Regents Scholarship Recipient",
+          "date": "September 2017"
+       }
+    ]
+ }

@@ -1,0 +1,60 @@
+{
+    "techLangs":[
+       {
+          "lang":"Python",
+          "level":"4 stars",
+          "description":[
+             "I use python in programming competitions and I taught Python over several months."
+          ]
+       },
+       {
+          "lang":"Java",
+          "level":"3 stars",
+          "description":[
+             "I completed assignments in Java for high school and University courses.",
+             "I also have worked in Java Spring Framework for creating or modifying microservices."
+          ]
+       },
+       {
+          "lang":"HTML/CSS",
+          "level":"4 stars",
+          "description":[
+             "I use HTML and CSS when teaching Hello Code and have done a lot of research for teaching this course."
+          ]
+       }
+    ],
+    "tools":[
+       {
+          "tool":"Git",
+          "level":"3 stars",
+          "description":[
+             "I have used Git on my projects and a majority of the projects I've used in industry used Git."
+          ]
+       },
+       {
+          "tool":"Postman",
+          "level":"3 stars",
+          "description":[
+             "I use Postman when testing my services.",
+             "I also used Postman when demonstrating RESTful APIs in my presentation for a UNO ACM club meeting."
+          ]
+       },
+       {
+          "tool":"Jira",
+          "level":"4 stars",
+          "description":[
+             "I have used Jira for Agile development in most of my work experiences."
+          ]
+       }
+    ],
+    "languages":[
+       {
+          "lang":"English",
+          "proficiency":"Native Proficiency"
+       },
+       {
+          "lang":"French",
+          "proficiency":"Limited Working Proficiency"
+       }
+    ]
+ }
