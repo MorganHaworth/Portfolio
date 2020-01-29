@@ -1,0 +1,11 @@
+{
+    "education":[
+       {
+          "school":"University of Nebraska at Omaha",
+          "degree":"Bachelors of Science in Computer Science",
+          "startDate": "August 2017",
+          "graduationDate":"Expected May 2021",
+          "GPA":3.75
+       }
+    ]
+ }
