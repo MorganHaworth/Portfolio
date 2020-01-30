@@ -6,7 +6,7 @@
 </template>
 
 <script>
-// can't believe tat's an error :D awesome 
+
 import Menu from './components/Menu.vue'
 
 export default {
