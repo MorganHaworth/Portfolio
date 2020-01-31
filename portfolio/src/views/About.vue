@@ -24,6 +24,7 @@
                         {{ item }}
                     </li>
                 </ul>
+                <img v-if="item.image" :src="getImgUrl(item.image)" class="card-img-bottom images" :alt="item.alt">
             </div>
         </div>
 
@@ -46,6 +47,10 @@
 </template>
 
 <style scoped>
+.images {
+    height: 50%;
+}
+
 .card-title {
     font-size: 27px;
     margin-bottom: 12px;
@@ -56,7 +61,7 @@
 }
 
 .sectionTitle {
-    font-family: courier, monospace;
+    font-family: Raleway, Montserrat, sans-serif;
     font-weight: bold;
     color: #FF6978;
     text-shadow: 1px 1px rgba(0,0,0,0.3);
@@ -75,6 +80,11 @@ import experience from '../json/experience.json'
 import education from '../json/education.json'
 
 export default {
+    methods: {
+        getImgUrl: function(pic) {
+            return require('../assets/'+pic)
+    }
+    },
     name: 'about',
     props: {
     },

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="sticky-top">
         <nav class="navbar navbar-expand-sm navbar-dark shadow-sm myNavBar">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -11,6 +11,9 @@
                     </li>
                     <li class="nav-item">
                         <router-link to="/about" class="nav-item nav-link router-link-active" href="#">About</router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/resume" class="nav-item nav-link router-link-active" href="#">Resume</router-link>
                     </li>
                     <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,8 +66,9 @@
 }
 
 nav li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 2px;
+    /*padding-top: 2px;
+    padding-bottom: 2px;*/
 }
 
 .navBgColor {
