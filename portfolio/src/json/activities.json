@@ -8,7 +8,15 @@
           "description":[
              "I created our demo showcasing grid-strategy in Jupyter Notebook.",
              "I learned about code coverage, team collaboration with Git, and open source contributions."
-          ]
+          ], 
+          "buttons": [
+             {
+                "label": "Github",
+                "src": "https://github.com/MorganHaworth/GridStratNotebook"
+             }
+          ],
+          "image": "Grid-Strat_Demo.jpg",
+          "alt": "Demonstration of grid-strategy using 'Squarify' function to organize 9 graphs into a square shape."
        },
        {
           "activity":"CodePath",
@@ -19,7 +27,9 @@
        },
        {
           "activity":"Grace Hopper Conference National Scholarship Recipient",
-          "date":"Fall 2019"
+          "date":"Fall 2019",
+          "image": "Grace-Hopper-Conference-2019.jpg",
+          "alt": "Attending the Grace Hopper Conference in 2019"
        },
        {
           "activity":"HackISU",

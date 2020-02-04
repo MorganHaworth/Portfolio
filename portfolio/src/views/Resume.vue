@@ -1,14 +1,20 @@
 <template>
     <div>
-        <!-- Now that is some unexpected behavior. Ok maybe not, I looked into it. -->
-        <!--<iframe src="\assets\Resume.pdf" width=”100%” height=”100%”></iframe>-->
         
     </div>
 </template>
 
 <script>
+//import resume from '../assets/Resume.pdf';
+
 export default {
+    methods: {
+        getResume: function() {
+            return './assets/Resume.pdf'
+        }
+    },
     name: 'resume',
+    //resume: resume,
     props: {
     }
 }
