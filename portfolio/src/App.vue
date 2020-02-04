@@ -20,7 +20,7 @@ export default {
 <style>
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

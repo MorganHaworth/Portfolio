@@ -9,7 +9,9 @@
           "responsibilities":[
              "I facilitated student learning of the program's curriculum.",
              "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C."
-          ]
+          ],
+          "image": "Sunnyvale.jpg",
+          "alt": "Outdoors of GoDaddy in Sunnyvale"
        },
        {
           "company":"DoSpace",
@@ -64,7 +66,9 @@
              "I create and teach a weekly curriculum for adult students.",
              "I teach HTML and CSS basics while answering student questions.",
              "Over the course of five weeks, I help each student create a website."
-          ]
+          ],
+          "image":"Teaching-Hello-Code.jpg",
+          "alt":"Teaching Hello Code"
        },
        {
           "company":"Mutual of Omaha",
@@ -73,7 +77,7 @@
           "endDate":"Present",
           "location":"Omaha, NE",
           "responsibilities":[
-             "I created database connections for a healthcheck application."
+             "Working on the backend for an application-heathcheck app"
           ]
        }
     ]
