@@ -1,12 +1,15 @@
 <template>
     <div class="container">
-
         <div class="card">
             <div class="card-body">
-                <h3>
-                    Hi, I'm Morgan Haworth. I'm a junior at the University of Nebraska of Omaha. I am looking for 
-                    software engineering internships.
-                </h3>
+                <h1 style="margin-top: 20px;">
+                    Hi, I'm Morgan Haworth. 
+                </h1>
+                <div class="items">
+                    I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
+                    frontend experience through teaching, industry, and personal experience. I want to explore the backend
+                    and am looking software engineering opportunities.
+                </div>
                 <a href="#" class="btn">Resume</a>
             </div>
         </div>
@@ -26,19 +29,68 @@
                 <p>
                     I plan on pursuing UNO's 4 + 1 Computer Science Graduate Program.
                 </p>
+
+                <div class="accordion" id="accordionExample">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Relevant Courses
+                        </button>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            Involvement
+                        </button>
+                    </h5>
+                    
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <ul class="items">
+                            <li v-for="(item, index) in $options.courses.courses.slice().reverse()" :key="'C'+index">
+                                {{ item.courseName }}
+                            </li>
+                        </ul>
+                    </div>                    
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div v-for="(item, index) in $options.involvement.clubs" :key="'D'+index">
+                            <div class="row card-body">
+                                <div :class="{'col-md-7': item.image}"><!--class="col-md-7">-->
+                                    <div class="card-block">
+                                        <h5 class="card-title">{{ item.clubName }}</h5>
+                                        <div v-for="(item, index) in item.positions" :key="'E'+index">
+                                            <p class="card-subtitle">{{item.position}}</p>
+                                            <p class="card-subtitle text-muted">{{item.timePeriod}}</p>
+                                            <ul class="items">
+                                                <li v-for="(item, index) in item.responsibility" :key="'C'+index">
+                                                    {{ item }}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div :class="{'col-md-5': item.image}">
+                                    <div>
+                                        <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+
             </div>
         </div>
         <div class="text-left sectionTitle">Work Experience</div>
-        <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'C'+index">
+        <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
                     
             <div v-if="item.image" class="row card-body">
                 <div class="col-md-6">
                     <div class="card-block">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <h6 class="card-subtitle">{{ item.company }}</h6>
-                        <p class="card-subtitle text-muted">{{ item.startDate }} - {{ item.endDate }}</p>
+                        <p class="card-subtitle text-muted">{{ item.startDate }} - 
+                            {{ item.endDate }} in {{ item.location }}</p>
                         <ul class="items">
-                            <li v-for="(item, index) in item.responsibilities" :key="'D'+index">
+                            <li v-for="(item, index) in item.responsibilities" :key="'G'+index">
                                 {{ item }}
                             </li>
                         </ul>
@@ -54,9 +106,10 @@
             <div v-if="!item.image" class="card-body">
                 <h5 class="card-title">{{ item.title }}</h5>
                 <h6 class="card-subtitle">{{ item.company }}</h6>
-                <p class="card-subtitle text-muted">{{ item.startDate }} - {{ item.endDate }}</p>
+                <p class="card-subtitle text-muted">{{ item.startDate }} - 
+                            {{ item.endDate }} in {{ item.location }}</p>
                 <ul class="items">
-                    <li v-for="(item, index) in item.responsibilities" :key="'D'+index">
+                    <li v-for="(item, index) in item.responsibilities" :key="'H'+index">
                         {{ item }}
                     </li>
                 </ul>
@@ -64,7 +117,7 @@
         </div>
 
         <div class="text-left sectionTitle">Activities and Awards</div>
-        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'E'+index">
+        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'I'+index">
 
             <div v-if="!item.image" class="card-body">
                 <h5 class="card-title">{{ item.activity }}</h5>
@@ -73,12 +126,12 @@
                 </h6>
                 <p class="card-subtitle text-muted">{{ item.date }}</p>
                 <ul class="items">
-                    <li v-for="(item, index) in item.description" :key="'F'+index">
+                    <li v-for="(item, index) in item.description" :key="'J'+index">
                         {{ item }}
                     </li>
                 </ul>
                 <div v-if="item.buttons">
-                    <a v-for="(item, index) in item.buttons" :key="'G'+index"
+                    <a v-for="(item, index) in item.buttons" :key="'K'+index"
                         :href="item.src" target="_blank" class="btn">{{ item.label }}</a>
                 </div>
             </div>
@@ -92,12 +145,12 @@
                         </h6>
                         <p class="card-subtitle text-muted">{{ item.date }}</p>
                         <ul class="items">
-                            <li v-for="(item, index) in item.description" :key="'F'+index">
+                            <li v-for="(item, index) in item.description" :key="'L'+index">
                                 {{ item }}
                             </li>
                         </ul>
                         <div v-if="item.buttons" class="text-center">
-                            <a v-for="(item, index) in item.buttons" :key="'G'+index"
+                            <a v-for="(item, index) in item.buttons" :key="'M'+index"
                                 :href="item.src" class="btn">{{ item.label }}</a>
                         </div>
                     </div>
@@ -114,12 +167,13 @@
 </template>
 
 <style scoped>
+
 .btn {
     color: white;
-    background-color: #80DDD6;
+    background-color: rgb(72, 190, 181);
     border: none;
     font-family: Raleway;
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .card-title {
@@ -151,6 +205,7 @@
 .items {
     font-family: Roboto;
     font-weight: lighter;
+    margin-bottom: 16px;
 }
 
 .card {
@@ -162,6 +217,8 @@
 import activities from '../json/activities.json'
 import experience from '../json/experience.json'
 import education from '../json/education.json'
+import courses from '../json/courses.json'
+import involvement from '../json/involvement.json'
 
 export default {
     methods: {
@@ -174,7 +231,9 @@ export default {
     },
     activities: activities, 
     experience: experience,
-    education: education
+    education: education,
+    courses: courses,
+    involvement: involvement
     /*data: function() { //if json were dynamic
         return {
             activities,
