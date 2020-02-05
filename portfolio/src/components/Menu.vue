@@ -78,7 +78,7 @@ nav li {
 }
 
 .navBgColor {
-    background-color: #80DDD6;/*#B1EDE8;*/
+    background-color: rgb(72, 190, 181);/*#B1EDE8;*/
 }
 
 .myNavBar {

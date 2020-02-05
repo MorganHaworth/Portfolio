@@ -1,0 +1,49 @@
+{
+    "courses": [
+        {
+            "courseName":"Intro to CS II"
+        },
+        {
+            "courseName":"Discrete Mathematics"
+        },
+        {
+            "courseName":"Intro to C Programming"
+        },
+        {
+            "courseName":"Windows Administration"
+        },
+        {
+            "courseName":"Data Structures"
+        },
+        {
+            "courseName":"Linux Administration"
+        },
+        {
+            "courseName":"Communication Networks"
+        },
+        {
+            "courseName":"Forensics"
+        },
+        {
+            "courseName":"Intro to Digital Design"
+        },
+        {
+            "courseName":"Applied Linear Algebra"
+        },
+        {
+            "courseName":"Foundations of Cybersecurity"
+        },
+        {
+            "courseName":"Theory of Computation"
+        },
+        {
+            "courseName":"Intro to IS&T Applied Statistics"
+        },
+        {
+            "courseName":"Principles of Programming Languages"
+        },
+        {
+            "courseName":"Introduction to Software Engineering"
+        }
+    ]
+}

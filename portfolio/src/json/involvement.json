@@ -1,0 +1,47 @@
+{
+   "clubs":[
+      {
+         "clubName":"Association for Computing Machinery",
+         "positions":[
+            {
+               "position":"Officer",
+               "timePeriod":"Fall 2019 - Present",
+               "responsibility":[
+                  "Proctor and create question for UNO ACM's programming competitions",
+                  "Give demonstrations during club meetings over various topics such as: VueJS and Magic Square Matrix problem",
+                  "Assist with Computer Science Education Week UNO ACM Programming competition for high school students",
+                  "Help advertise and coordinate for UNO ACM events"
+               ]
+            },
+            {
+               "position":"Member",
+               "timePeriod":"Fall 2017 - Spring 2019",
+               "responsibility":[
+                  "Participate in UNO ACM's bi-annual programming competitions"
+               ]
+            }
+         ],
+         "image": "HackUNO.jpg"
+      },
+      {
+         "clubName":"Association for Computing Machinery - Women",
+         "positions":[
+            {
+               "position":"Vice President",
+               "timePeriod":"Fall 2018 - Present",
+               "responsibility":[
+                  "Manage UNO ACM-W biweekly meetings"
+               ]
+            },
+            {
+               "position":"Member",
+               "timePeriod":"Fall 2017 - Spring 2018",
+               "responsibility":[
+                  "Participate in ACM-W volunteering with UNO Code Crush and coding with Lincoln Girl Scouts"
+               ]
+            }
+         ],
+         "image": ""
+      }
+   ]
+}
