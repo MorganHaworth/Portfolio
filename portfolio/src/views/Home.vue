@@ -3,8 +3,11 @@
         <div class="card">
             <div class="card-body">
                 <h1 class="card-title">Morgan Haworth</h1>
-                <img :src="getUrl('Morgan.jpg')" style="width:40%; border-radius: 100%;" class="card-img-bottom" alt="Morgan selfie">
+                <img :src="getUrl('Morgan-TOPS.jpg')" style="width:40%; border-radius: 100%;" class="card-img-bottom" alt="Morgan selfie">
             </div>
+        </div>
+        <div class="card">
+            Hello, welcome to my site XOXO.
         </div>
     </div>
 </template>

@@ -10,7 +10,10 @@
                     frontend experience through teaching, industry, and personal experience. I want to explore the backend
                     and am looking software engineering opportunities.
                 </div>
-                <a href="#" class="btn">Resume</a>
+                <a href="#" target="_blank">
+                    <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
+                </a>
+                <a href="Resume.docx" download class="btn">Download .docx Resume</a>
             </div>
         </div>
 
@@ -83,7 +86,7 @@
         <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
                     
             <div v-if="item.image" class="row card-body">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="card-block">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <h6 class="card-subtitle">{{ item.company }}</h6>
@@ -96,7 +99,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div>
                         <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
                     </div>
