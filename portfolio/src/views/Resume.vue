@@ -1,12 +1,19 @@
 <template>
-    <div>
-        
+    <div id="frameContainer">
+        <object data="Resume.pdf" type="application/pdf" height="100%" width="100%">
+            <iframe src="Resume.pdf" height="100%" width="100%"></iframe>
+        </object>
     </div>
 </template>
 
-<script>
-//import resume from '../assets/Resume.pdf';
+<style scoped>
+#frameContainer {
+    height: calc(100% - 44px);
+    width: 100%;
+}
+</style>
 
+<script>
 export default {
     methods: {
         getResume: function() {
@@ -14,7 +21,6 @@ export default {
         }
     },
     name: 'resume',
-    //resume: resume,
     props: {
     }
 }
