@@ -8,7 +8,7 @@
                 <div class="items">
                     I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
                     frontend experience through teaching, industry, and personal experience. I want to explore the backend
-                    and am looking software engineering opportunities.
+                    and am looking for software engineering opportunities.
                 </div>
                 <a href="#" target="_blank">
                     <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
@@ -170,7 +170,6 @@
 </template>
 
 <style scoped>
-
 .btn {
     color: white;
     background-color: rgb(72, 190, 181);

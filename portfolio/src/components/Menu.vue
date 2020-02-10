@@ -22,17 +22,17 @@
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navBgColor"> <!--  background color of icons -->
                         <li class="nav-item brandIcon">
-                            <a class="nav-link" href="mailto:morgan123haworth@gmail.com">
+                            <a class="nav-link" target="_blank" href="mailto:morgan123haworth@gmail.com">
                                 <font-awesome-icon size="lg" style="color: rgba(255,255,255,.9)" icon="envelope"/>
                             </a>
                         </li>
                         <li class="nav-item brandIcon">
-                            <a class="nav-link" href="https://github.com/MorganHaworth">
+                            <a class="nav-link" target="_blank" href="https://github.com/MorganHaworth">
                                 <font-awesome-icon size="lg" style="color: rgba(255,255,255,.9)" :icon="['fab', 'github']"/>
                             </a>
                         </li>
                         <li class="nav-item brandIcon">
-                            <a class="nav-link" href="https://www.linkedin.com/in/morganhaworth/">
+                            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/morganhaworth/">
                                 <font-awesome-icon style="color: rgba(255,255,255,.9)" size="lg" :icon="['fab', 'linkedin']"/>
                             </a>
                         </li>
