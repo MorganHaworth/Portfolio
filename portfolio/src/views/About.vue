@@ -6,9 +6,12 @@
                     Hi, I'm Morgan Haworth. 
                 </h1>
                 <div class="items">
-                    I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
-                    frontend experience through teaching, industry, and personal experience. I want to explore the backend
-                    and am looking for software engineering opportunities.
+                    I'm a junior studying computer science 
+                    at the University of Nebraska at Omaha. I am looking for software 
+                    engineering opportunities where I can learn and contribute in a 
+                    team environment. I have gained front-end experience through teaching, 
+                    internships, and personal projects. I am eager to explore backend 
+                    development as I prepare for a career in IT.
                 </div>
                 <a href="#" target="_blank">
                     <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
