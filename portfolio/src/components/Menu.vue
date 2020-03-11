@@ -1,6 +1,6 @@
 <template>
     <!--<div :class="{'sticky-top': ['resume'].indexOf($route.name) <= -1}">-->
-        <div class="sticky-top">
+    <div class="sticky-top">
         <nav class="navbar navbar-expand-sm navbar-dark shadow-sm myNavBar">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
