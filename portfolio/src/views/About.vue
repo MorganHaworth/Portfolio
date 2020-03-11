@@ -84,7 +84,6 @@
         </div>
         <div class="text-left sectionTitle">Work Experience</div>
         <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
-                    
             <div v-if="item.image" class="row card-body">
                 <div class="col-md-7">
                     <div class="card-block">
