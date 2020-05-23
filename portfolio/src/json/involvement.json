@@ -4,8 +4,12 @@
          "clubName":"Association for Computing Machinery",
          "positions":[
             {
+               "position": "President",
+               "timePeriod": "Fall 2020 - Present"
+            },
+            {
                "position":"Officer",
-               "timePeriod":"Fall 2019 - Present",
+               "timePeriod":"Fall 2019 - Spring 2020",
                "responsibility":[
                   "Proctor and create question for UNO ACM's programming competitions",
                   "Give demonstrations during club meetings over various topics such as: VueJS and Magic Square Matrix problem",
@@ -28,14 +32,14 @@
          "positions":[
             {
                "position":"Vice President",
-               "timePeriod":"Fall 2018 - Present",
+               "timePeriod":"Fall 2018 - Spring 2020",
                "responsibility":[
                   "Manage UNO ACM-W biweekly meetings"
                ]
             },
             {
                "position":"Member",
-               "timePeriod":"Fall 2017 - Spring 2018",
+               "timePeriod":"Fall 2017 - Spring 2018, Fall 2020 - Present",
                "responsibility":[
                   "Participate in ACM-W volunteering with UNO Code Crush and teaching about computer science fundamentals with Lincoln Girl Scouts"
                ]

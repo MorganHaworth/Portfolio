@@ -5,19 +5,23 @@
                 <h1 style="margin-top: 20px;">
                     Hi, I'm Morgan Haworth. 
                 </h1>
-                <div class="items">
-                    I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
-                    frontend experience through teaching, industry, and personal experience. I want to explore the backend
-                    and am looking for software engineering opportunities.
-                </div>
                 <a href="#" target="_blank">
                     <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
                 </a>
                 <a href="Resume.docx" download class="btn">Download .docx Resume</a>
+                <div class="items intro m-20">
+                    I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
+                    frontend experience through teaching, industry, and personal experience. I want to explore the backend
+                    and am looking for software engineering opportunities.
+                </div>
+                <a class="porto-button btn btn-pg" @click="scrollMeTo('Education')">Education</a>
+                <a class="porto-button btn btn-pg" @click="scrollMeTo('Work-Experience')">Work Experience</a>
+                <a class="porto-button btn btn-pg" @click="scrollMeTo('Projects')">Projects</a>
+                <a class="porto-button btn btn-pg" @click="scrollMeTo('Activities-and-Awards')">Activities and Awards</a>
             </div>
         </div>
 
-        <div class="text-left sectionTitle">Education</div>
+        <div ref="Education" class="text-left sectionTitle">Education</div>
         <div class="card text-left" v-for="(item, index) in $options.education.education" :key="'A'+index">
             <div class="card-body">
                 <h5 class="card-title">{{ item.school }}</h5>
@@ -82,7 +86,7 @@
 
             </div>
         </div>
-        <div class="text-left sectionTitle">Work Experience</div>
+        <div ref="Work-Experience" class="text-left sectionTitle">Work Experience</div>
         <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
             <div v-if="item.image" class="row card-body">
                 <div class="col-md-7">
@@ -118,8 +122,34 @@
             </div>
         </div>
 
-        <div class="text-left sectionTitle">Activities and Awards</div>
-        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'I'+index">
+        <div ref="Projects" class="text-left sectionTitle">Projects</div>
+        <div class="card text-left" v-for="(item, index) in $options.projects.projects" :key="'I'+index">
+            <div class="row card-body">
+                <div class="col-md-7">
+                    <div class="card-block">
+                        <h5 class="card-title">{{ item.title }}</h5>
+                        <ul class="items">
+                            {{item.description}}
+                        </ul>
+                        <div style="display: flex;">
+                            <h6 class="card-subtitle text-muted col-xs-6 my-auto">Technologies:</h6>
+                            <button v-for="(item, index) in item.technologies"
+                                class="btn btn-tech col-xs-6" :key="'Gg'+index">{{ item }}</button>
+                        </div>
+                        <div v-if="item.buttons" class="text-center">
+                            <a v-for="(item, index) in item.buttons" :key="'Ll'+index"
+                                :href="item.src" target="_blank" class="btn">{{ item.label }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
+                </div>
+            </div>
+        </div>
+
+        <div ref="Activities-and-Awards" class="text-left sectionTitle">Activities and Awards</div>
+        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'J'+index">
 
             <div v-if="!item.image" class="card-body">
                 <h5 class="card-title">{{ item.activity }}</h5>
@@ -128,12 +158,12 @@
                 </h6>
                 <p class="card-subtitle text-muted">{{ item.date }}</p>
                 <ul class="items">
-                    <li v-for="(item, index) in item.description" :key="'J'+index">
+                    <li v-for="(item, index) in item.description" :key="'K'+index">
                         {{ item }}
                     </li>
                 </ul>
                 <div v-if="item.buttons">
-                    <a v-for="(item, index) in item.buttons" :key="'K'+index"
+                    <a v-for="(item, index) in item.buttons" :key="'L'+index"
                         :href="item.src" target="_blank" class="btn">{{ item.label }}</a>
                 </div>
             </div>
@@ -147,12 +177,12 @@
                         </h6>
                         <p class="card-subtitle text-muted">{{ item.date }}</p>
                         <ul class="items">
-                            <li v-for="(item, index) in item.description" :key="'L'+index">
+                            <li v-for="(item, index) in item.description" :key="'M'+index">
                                 {{ item }}
                             </li>
                         </ul>
                         <div v-if="item.buttons" class="text-center">
-                            <a v-for="(item, index) in item.buttons" :key="'M'+index"
+                            <a v-for="(item, index) in item.buttons" :key="'N'+index"
                                 :href="item.src" class="btn">{{ item.label }}</a>
                         </div>
                     </div>
@@ -175,6 +205,20 @@
     border: none;
     font-family: Raleway;
     margin: 0 10px 10px 10px;
+}
+
+.btn-pg {
+    background-color: #EF6573;
+}
+
+.btn-tech {
+    padding: 2px 6px;
+    font-size: 16px;
+    margin: 6px;
+}
+
+.intro {
+    margin: 30px 30px 0px;
 }
 
 .card-title {
@@ -220,9 +264,16 @@ import experience from '../json/experience.json'
 import education from '../json/education.json'
 import courses from '../json/courses.json'
 import involvement from '../json/involvement.json'
+import projects from '../json/projects.json'
 
 export default {
     methods: {
+        scrollMeTo(refName) {
+        var element = this.$refs[refName];
+        var top = element.offsetTop - 54;
+
+        window.scrollTo(0, top);
+    },
         getUrl: function(file) {
             return require('../assets/' + file).default
         }
@@ -233,6 +284,7 @@ export default {
     activities: activities, 
     experience: experience,
     education: education,
+    projects: projects,
     courses: courses,
     involvement: involvement
     /*data: function() { //if json were dynamic
