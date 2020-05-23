@@ -1,0 +1,19 @@
+{
+   "projects":[
+      {
+         "title":"Recipe Finder",
+         "technologies": [
+            "Flask", "Bootstrap", "Spoonacular"
+         ],
+         "buttons": [
+            {
+               "label": "Github",
+               "src": "https://github.com/MorganHaworth/RecipeFinder"
+            }
+         ],
+         "description": "This app helps users find recipes from ingredients they have. The data is provided by the Spoonacular API.",
+         "image": "RecipeFinder.jpg",
+         "alt": "Recipe Finder uses your ingredients to find recipes."
+      }
+   ]
+}

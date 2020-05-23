@@ -53,8 +53,19 @@
           "endDate":"January 2020",
           "location":"Omaha, NE",
           "responsibilities":[
-             "I setup an Angular8 app and Java backend for managing documents."
+             "I created an Angular8 frontend for managing documents."
           ]
+       },
+       {
+         "company":"Mutual of Omaha",
+         "title":"Technology Intern",
+         "startDate":"January 2020",
+         "endDate":"May 2020",
+         "location":"Omaha, NE",
+         "responsibilities":[
+            "I worked on the backend for an application-heathcheck app",
+            "I created SFTP tests for the healthcheck application"
+         ]
        },
        {
           "company":"DoSpace",
@@ -69,16 +80,6 @@
           ],
           "image":"Teaching-Hello-Code.jpg",
           "alt":"Teaching Hello Code"
-       },
-       {
-          "company":"Mutual of Omaha",
-          "title":"Technology Intern",
-          "startDate":"January 2020",
-          "endDate":"Present",
-          "location":"Omaha, NE",
-          "responsibilities":[
-             "Working on the backend for an application-heathcheck app"
-          ]
        }
     ]
  }
