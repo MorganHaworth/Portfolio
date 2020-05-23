@@ -8,7 +8,7 @@
 
 <style scoped>
 #frameContainer {
-    height: calc(100% - 44px);
+    height: calc(100% - 54px);
     width: 100%;
 }
 </style>
