@@ -1,7 +1,22 @@
 {
     "activities":[
        {
-          "activity":"HackIllinois",
+          "activity": "HackIllinois 2020",
+          "project": "grid-strategy-2.0",
+          "date": "February 2020",
+          "outcome": "Staff Pick",
+          "description": [
+               "Added customizable aspect ratio for displaying the grids"
+          ],
+          "buttons": [
+             {
+                "label": "Devpost",
+                "src": "https://dvp.st/36BJX3f"
+             }
+          ]
+       },
+       {
+          "activity":"HackIllinois 2019",
           "project":"grid-strategy",
           "date":"February 2019",
           "outcome":"1st place",
@@ -13,6 +28,10 @@
              {
                 "label": "Github",
                 "src": "https://github.com/MorganHaworth/GridStratNotebook"
+             },
+             {
+                "label": "Devpost",
+                "src": "https://devpost.com/software/grid_strategy"
              }
           ],
           "image": "Grid-Strat_Demo.jpg",
