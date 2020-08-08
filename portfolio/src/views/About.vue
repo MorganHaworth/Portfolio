@@ -182,7 +182,7 @@
                             </li>
                         </ul>
                         <div v-if="item.buttons" class="text-center">
-                            <a v-for="(item, index) in item.buttons" :key="'N'+index"
+                            <a v-for="(item, index) in item.buttons" :key="'N'+index" target="_blank" 
                                 :href="item.src" class="btn">{{ item.label }}</a>
                         </div>
                     </div>
