@@ -25,17 +25,16 @@
         <div class="card text-left" v-for="(item, index) in $options.education.education" :key="'A'+index">
             <div class="card-body">
                 <h5 class="card-title">{{ item.school }}</h5>
-                <h6 class="card-subtitle">{{ item.degree }} - GPA: {{ item.GPA }}</h6>
-                <p class="card-subtitle text-muted">{{ item.startDate }} - {{ item.graduationDate }}</p>
-                <ul class="items">
-                    <li v-for="(item, index) in item.responsibilities" :key="'B'+index">
-                        {{ item }}
-                    </li>
-                </ul>
-
-                <p>
-                    I plan on pursuing UNO's 4 + 1 Computer Science Graduate Program.
-                </p>
+                
+                <div v-for="(item, index) in item.degrees" :key="'degree'+index">
+                    <h6 class="card-subtitle">{{ item.degree }}<span v-if="item.GPA"> - GPA: {{ item.GPA }}</span></h6>
+                    <p class="card-subtitle text-muted">{{ item.startDate }} - {{ item.graduationDate }}</p>
+                    <ul class="items">
+                        <li v-for="(item, index) in item.responsibilities" :key="'B'+index">
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="accordion" id="accordionExample">
                     <h5 class="mb-0">
@@ -131,9 +130,9 @@
                         <ul class="items">
                             {{item.description}}
                         </ul>
-                        <div style="display: flex;">
+                        <div style="display: flex; flex-wrap: wrap;">
                             <h6 class="card-subtitle text-muted col-xs-6 my-auto">Technologies:</h6>
-                            <button v-for="(item, index) in item.technologies"
+                            <button v-for="(item, index) in item.technologies" 
                                 class="btn btn-tech col-xs-6" :key="'Gg'+index">{{ item }}</button>
                         </div>
                         <div v-if="item.buttons" class="text-center">

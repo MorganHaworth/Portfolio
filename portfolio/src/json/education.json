@@ -1,14 +1,23 @@
 {
-    "education":[
-       {
-          "school":"University of Nebraska at Omaha",
-          "degree":"Bachelors of Science in Computer Science",
-          "startDate": "August 2017",
-          "graduationDate":"Expected May 2021",
-          "GPA": 3.75,
-          "responsibilities": [
-             "Minor in Cybersecurity after Spring 2020"
-          ]
-       }
-    ]
- }
+   "education": [
+      {
+         "school":"University of Nebraska at Omaha",
+         "degrees": [
+            {
+               "degree": "Masters of Science in Computer Science",
+               "startDate": "August 2020",
+               "graduationDate":"Expected May 2022"
+            },
+            {
+               "degree": "Bachelors of Science in Computer Science",
+               "startDate": "August 2017",
+               "graduationDate":"Expected May 2021",
+               "GPA": 3.75,
+               "responsibilities": [
+                  "Minor in Cybersecurity"
+               ]
+            }   
+         ]
+      }
+   ]
+}

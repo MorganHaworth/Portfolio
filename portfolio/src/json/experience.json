@@ -74,12 +74,22 @@
           "endDate":"Present",
           "location":"Omaha, NE",
           "responsibilities":[
-             "I create and teach a weekly curriculum for adult students.",
-             "I teach HTML and CSS basics while answering student questions.",
-             "Over the course of five weeks, I help each student create a website."
+             "I create and teach a weekly curriculum for adult students",
+             "I teach HTML and CSS basics while answering student questions",
+             "Over the course of five weeks, I help students create a website"
           ],
           "image":"Teaching-Hello-Code.jpg",
           "alt":"Teaching Hello Code"
+       },
+       {
+         "company":"Bank of America",
+         "title":"Global Technology Analyst Intern",
+         "startDate":"June 2020",
+         "endDate":"August 2020",
+         "location":"a Remote Internship",
+         "responsibilities":[
+            "I scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
+         ]
        }
     ]
  }

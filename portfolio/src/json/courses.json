@@ -44,6 +44,12 @@
         },
         {
             "courseName":"Introduction to Software Engineering"
+        },
+        {
+            "courseName":"Software Specifications & Design"
+        },
+        {
+            "courseName":"Human Computer Interaction"
         }
     ]
 }
