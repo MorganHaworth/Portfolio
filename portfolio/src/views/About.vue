@@ -10,9 +10,9 @@
                 </a>
                 <a href="Resume.docx" download class="btn">Download .docx Resume</a>
                 <div class="items intro m-20">
-                    I'm a junior at the University of Nebraska of Omaha studying computer science. I have a lot of 
-                    frontend experience through teaching, industry, and personal experience. I want to explore the backend
-                    and am looking for software engineering opportunities.
+                    I'm a senior at the University of Nebraska of Omaha studying computer science.
+                    I have a lot of frontend experience through teaching, industry, and personal
+                    experience. I want to continue exploring software engineering opportunities.
                 </div>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Education')">Education</a>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Work-Experience')">Work Experience</a>
@@ -243,7 +243,7 @@
     color: #EF6573;
     text-shadow: 1px 1px rgba(0,0,0,0.3);
     font-size: 36px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .items {
