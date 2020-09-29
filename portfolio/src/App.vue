@@ -4,7 +4,6 @@
     <router-view/>
   </div>
 </template>
-
 <script>
 
 import Menu from './components/Menu.vue'
