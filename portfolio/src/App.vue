@@ -4,7 +4,7 @@
     <router-view/>
   </div>
 </template>
-
+<script src="jquery-3.5.1.min.js"></script>
 <script>
 
 import Menu from './components/Menu.vue'
