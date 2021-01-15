@@ -53,6 +53,15 @@
         },
         {
             "courseName":"Human Computer Interaction"
+        },
+        {
+            "courseName":"UX Design"
+        },
+        {
+            "courseName": "Intro to Deep Learning"
+        },
+        {
+            "courseName": "Capstone"
         }
     ]
 }
