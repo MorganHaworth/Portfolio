@@ -88,7 +88,7 @@
         <div ref="Work-Experience" class="text-left sectionTitle">Work Experience</div>
         <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
             <div v-if="item.image" class="row card-body">
-                <div class="col-md-7">
+                <div :class="item.imageType == 'logo' ? 'col-md-9' : 'col-md-7'">
                     <div class="card-block">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <h6 class="card-subtitle">{{ item.company }}</h6>
@@ -101,7 +101,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div :class="item.imageType == 'logo' ? 'col-md-3' : 'col-md-5'">
                     <div>
                         <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
                     </div>
@@ -262,6 +262,7 @@ import activities from '../json/activities.json'
 import experience from '../json/experience.json'
 import education from '../json/education.json'
 import courses from '../json/courses.json'
+import teaching from '../json/teaching.json'
 import involvement from '../json/involvement.json'
 import projects from '../json/projects.json'
 
@@ -274,7 +275,7 @@ export default {
         window.scrollTo(0, top);
     },
         getUrl: function(file) {
-            return require('../assets/' + file).default
+            return require('../assets/' + file)
         }
     },
     name: 'about',
@@ -283,6 +284,7 @@ export default {
     activities: activities, 
     experience: experience,
     education: education,
+    teaching: teaching,
     projects: projects,
     courses: courses,
     involvement: involvement

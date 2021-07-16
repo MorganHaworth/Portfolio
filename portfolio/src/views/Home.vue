@@ -6,19 +6,21 @@
                 <img :src="getUrl('Morgan-TOPS.jpg')" style="width:40%; border-radius: 100%;" class="card-img-bottom" alt="Morgan selfie">
             </div>
         </div>-->
-        <div class="card title-card">
-            <div class="card-body">
-                <h1 class="card-title">Morgan Haworth</h1>
+        <div class="center-screen">
+            <div class="card title-card">
+                <div class="card-body">
+                    <h1 class="card-title">Morgan Haworth</h1>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <a href="#" target="_blank">
-                    <router-link to="/about" class="btn" exact href="#">View About Me</router-link>
-                </a>
-                <a href="#" target="_blank">
-                    <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
-                </a>
+            <div class="card">
+                <div class="card-body">
+                    <a href="#" target="_blank">
+                        <router-link to="/about" class="btn" exact href="#">View About Me</router-link>
+                    </a>
+                    <a href="#" target="_blank">
+                        <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -31,6 +33,13 @@
     border: none;
     font-family: Raleway;
     margin: 0 10px 10px 10px;
+}
+
+.center-screen {
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translateY(-50%);
 }
 
 .card {

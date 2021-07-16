@@ -1,7 +1,7 @@
 {
     "experience":[
        {
-          "company":"Girls Who Code",
+          "company":"Do Space",
           "title":"Summer Immersion Program Teaching Assistant",
           "startDate":"May 2018",
           "endDate":"August 2018",
@@ -11,7 +11,6 @@
              "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C."
           ],
           "image": "Sunnyvale.jpg",
-          "imageType": "action",
           "alt": "Outdoors of GoDaddy in Sunnyvale"
        },
        {
@@ -20,8 +19,6 @@
           "startDate":"September 2018",
           "endDate":"March 2019",
           "location":"Omaha, NE",
-          "image": "GWC.png",
-          "imageType": "logo",
           "responsibilities":[
              "I taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python.",
              "I helped each student create a capstone."
@@ -33,8 +30,6 @@
           "startDate":"October 2018",
           "endDate":"May 2019",
           "location":"Omaha, NE",
-          "image": "union-pacific.png",
-          "imageType": "logo",
           "responsibilities":[
              "I created portions of web pages that call services to display information.",
              "I modified several services in order to retrieve desired data.",
@@ -47,8 +42,6 @@
           "startDate":"May 2019",
           "endDate":"August 2019",
           "location":"Omaha, NE",
-          "image": "spreetail.png",
-          "imageType": "logo",
           "responsibilities":[
              "I created backend services in .NET and Entity Framework to improve fulfillment center location management."
           ]
@@ -59,8 +52,6 @@
           "startDate":"September 2019",
           "endDate":"January 2020",
           "location":"Omaha, NE",
-          "image": "union-pacific.png",
-          "imageType": "logo",
           "responsibilities":[
              "I created an Angular8 frontend for managing documents."
           ]
@@ -71,8 +62,6 @@
          "startDate":"January 2020",
          "endDate":"May 2020",
          "location":"Omaha, NE",
-         "image": "mutual-of-omaha.png",
-         "imageType": "logo",
          "responsibilities":[
             "I worked on the backend for an application-heathcheck app",
             "I created SFTP tests for the healthcheck application"
@@ -90,7 +79,6 @@
              "Over the course of five weeks, I help students create a website"
           ],
           "image":"Teaching-Hello-Code.jpg",
-          "imageType": "action",
           "alt":"Teaching Hello Code"
        },
        {
@@ -99,36 +87,8 @@
          "startDate":"June 2020",
          "endDate":"August 2020",
          "location":"a Remote Internship",
-         "image": "bank-of-america.png",
-         "imageType": "logo",
          "responsibilities":[
             "I scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
-         ]
-       },
-       {
-         "company":"Mutual of Omaha",
-         "title":"Global Technology Analyst Intern",
-         "startDate":"August 2020",
-         "endDate":"April 2021",
-         "location":"a Remote Internship",
-         "image": "mutual-of-omaha.png",
-         "imageType": "logo",
-         "responsibilities":[
-            "Created and Modified HTML and files on client-facing sites",
-            "Created FTP testing for app health-check application"
-         ]
-       },
-       {
-         "company":"Twitch",
-         "title":"Engineering Intern - DevOps",
-         "startDate":"May 2021",
-         "endDate":"Current",
-         "location":"a Remote Internship",
-         "image": "twitch-logo.png",
-         "imageType": "logo",
-         "responsibilities":[
-            "Create Slack bot for domain delegation using AWS suite",
-            "Technologies: Route53, API Gateway, Lambda, EC2, Terraform"
          ]
        }
     ]
