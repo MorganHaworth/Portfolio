@@ -6,7 +6,7 @@
                 <img :src="getUrl('Morgan-TOPS.jpg')" style="width:40%; border-radius: 100%;" class="card-img-bottom" alt="Morgan selfie">
             </div>
         </div>-->
-        <div class="center-screen">
+
             <div class="card title-card">
                 <div class="card-body">
                     <h1 class="card-title">Morgan Haworth</h1>
@@ -22,7 +22,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        
     </div>
 </template>
 
@@ -35,11 +35,13 @@
     margin: 0 10px 10px 10px;
 }
 
-.center-screen {
-    top: 50%;
-    margin: 0;
-    position: absolute;
+.container {
+    position: relative;
+    top: 45%;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    border: 2px solid black;
 }
 
 .card {
@@ -47,7 +49,7 @@
 }
 
 .title-card {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 h1 {
