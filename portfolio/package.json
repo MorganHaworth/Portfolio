@@ -28,11 +28,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "file-loader": "^5.1.0",
-<<<<<<< HEAD
-    "html-webpack-plugin": "^4.5.0",
-=======
     "html-webpack-plugin": "^4.5.1",
->>>>>>> c6332e89074e8a98e90f366de904f5a4e8737ef9
     "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
