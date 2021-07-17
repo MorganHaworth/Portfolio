@@ -41,7 +41,6 @@
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    border: 2px solid black;
 }
 
 .card {
