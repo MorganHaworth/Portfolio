@@ -10,9 +10,10 @@
                 </a>
                 <a href="Resume.docx" download class="btn">Download .docx Resume</a>
                 <div class="items intro m-20">
-                    I'm a senior at the University of Nebraska of Omaha studying computer science.
-                    I have a lot of frontend experience through teaching, industry, and personal
-                    experience. I want to continue exploring software engineering opportunities.
+                    I'm a recent graduate from the University of Nebraska of Omaha with a Bachelor 
+                    of Science in Computer Science. I have a lot of frontend experience through teaching, 
+                    industry, and personal experience. I want to continue exploring software engineering 
+                    opportunities.
                 </div>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Education')">Education</a>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Work-Experience')">Work Experience</a>
@@ -73,7 +74,8 @@
                                     </div>
                                 </div>
                                 <div :class="{'col-md-5': item.image}">
-                                    <div>
+                                    <div class="frame">
+                                        <span class="helper"></span>
                                         <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
                                     </div>
                                 </div>
@@ -102,7 +104,8 @@
                     </div>
                 </div>
                 <div :class="item.imageType == 'logo' ? 'col-md-3' : 'col-md-5'">
-                    <div>
+                    <div class="frame">
+                        <span class="helper"></span>
                         <img v-if="item.image" :src="getUrl(item.image)" class="card-img images" :alt="item.alt">
                     </div>
                 </div>
@@ -206,8 +209,31 @@
     margin: 0 10px 10px 10px;
 }
 
+.frame {
+    text-align: center;
+    height: 100%;
+}
+
+.helper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.frame img {
+    vertical-align: middle;
+}
+
 .btn-pg {
-    background-color: #EF6573;
+    border: 3px solid #EF6573;
+    color: #EF6573;
+    background-color: white;
+    font-weight: bold;
+}
+
+.btn-pg:hover, .btn-pg:focus {
+    box-shadow: inset 0 0 0 2em #EF6573;
+    color: white;
 }
 
 .btn-tech {
