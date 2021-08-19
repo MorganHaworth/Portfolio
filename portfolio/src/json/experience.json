@@ -128,7 +128,7 @@
          "imageType": "logo",
          "responsibilities":[
             "Create Slack bot for domain delegation using AWS suite",
-            "Technologies: Route53, API Gateway, Lambda, EC2, Terraform"
+            "Technologies: Route53, API Gateway, Lambda, EC2, SecretsManager, Terraform"
          ]
        }
     ]
