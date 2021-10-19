@@ -11,7 +11,7 @@
                 <a href="Resume.docx" download class="btn">Download .docx Resume</a>
                 <div class="items intro m-20">
                     I'm a recent graduate from the University of Nebraska of Omaha with a Bachelor 
-                    of Science in Computer Science. I have a lot of frontend experience through teaching, 
+                    of Science in Computer Science. I have frontend experience through teaching, 
                     industry, and personal experience. I want to continue exploring software engineering 
                     opportunities.
                 </div>
@@ -88,6 +88,15 @@
             </div>
         </div>
         <div ref="Work-Experience" class="text-left sectionTitle">Work Experience</div>
+        <!-- <div id="exp_radio">
+            <input class="exp_radio_butt" id="all" checked type="checkbox" v-model="experienceChoice" value="industry">
+            <label for="all">All</label>
+            <input class="exp_radio_butt" id="industry" type="checkbox" v-model="experienceChoice" value="industry">
+            <label for="industry">Industry</label>
+            <input class="exp_radio_butt" id="teaching" type="checkbox" v-model="experienceChoice" value="teaching">
+            <label for="teaching">Teaching</label>  
+            <span>{{experienceChoice}}</span> 
+        </div> -->
         <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
             <div v-if="item.image" class="row card-body">
                 <div :class="item.imageType == 'logo' ? 'col-md-9' : 'col-md-7'">
@@ -95,7 +104,7 @@
                         <h5 class="card-title">{{ item.title }}</h5>
                         <h6 class="card-subtitle">{{ item.company }}</h6>
                         <p class="card-subtitle text-muted">{{ item.startDate }} - 
-                            {{ item.endDate }} in {{ item.location }}</p>
+                            {{ item.endDate }} {{ item.location }}</p>
                         <ul class="items">
                             <li v-for="(item, index) in item.responsibilities" :key="'G'+index">
                                 {{ item }}
@@ -115,7 +124,7 @@
                 <h5 class="card-title">{{ item.title }}</h5>
                 <h6 class="card-subtitle">{{ item.company }}</h6>
                 <p class="card-subtitle text-muted">{{ item.startDate }} - 
-                            {{ item.endDate }} in {{ item.location }}</p>
+                            {{ item.endDate }} {{ item.location }}</p>
                 <ul class="items">
                     <li v-for="(item, index) in item.responsibilities" :key="'H'+index">
                         {{ item }}
@@ -284,41 +293,48 @@
 </style>
 
 <script>
-import activities from '../json/activities.json'
-import experience from '../json/experience.json'
-import education from '../json/education.json'
-import courses from '../json/courses.json'
-import teaching from '../json/teaching.json'
-import involvement from '../json/involvement.json'
-import projects from '../json/projects.json'
+    import activities from '../json/activities.json'
+    import experience from '../json/experience.json'
+    import education from '../json/education.json'
+    import courses from '../json/courses.json'
+    import teaching from '../json/teaching.json'
+    import involvement from '../json/involvement.json'
+    import projects from '../json/projects.json'
 
-export default {
-    methods: {
-        scrollMeTo(refName) {
-        var element = this.$refs[refName];
-        var top = element.offsetTop - 54;
+    export default {
+        activities: activities, 
+        experience: experience,
+        education: education,
+        teaching: teaching,
+        projects: projects,
+        courses: courses,
+        involvement: involvement,
+        // computed: {
+        //     filteredExperience(){
+        //         return experience
+        //     }
+        // },
+        //     experienceChoice: []
+            
+        methods: {
+            scrollMeTo(refName) {
+            var element = this.$refs[refName];
+            var top = element.offsetTop - 54;
 
-        window.scrollTo(0, top);
-    },
-        getUrl: function(file) {
-            return require('../assets/' + file)
-        }
-    },
-    name: 'about',
-    props: {
-    },
-    activities: activities, 
-    experience: experience,
-    education: education,
-    teaching: teaching,
-    projects: projects,
-    courses: courses,
-    involvement: involvement
-    /*data: function() { //if json were dynamic
-        return {
-            activities,
-            experience
-        } 
-    }*/
-}
+            window.scrollTo({top: top, left: 0, behavior: 'smooth'});
+        },
+            getUrl: function(file) {
+                return require('../assets/' + file)
+            }
+        },
+        name: 'about',
+        props: {
+        },
+        // data: function() { //if json were dynamic 
+        //     return {
+        //         activities,
+        //         experience
+        //     } 
+        // }
+    }
 </script>
