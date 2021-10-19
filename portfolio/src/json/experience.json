@@ -5,85 +5,91 @@
           "title":"Summer Immersion Program Teaching Assistant",
           "startDate":"May 2018",
           "endDate":"August 2018",
-          "location":"Sunnyvale, CA",
+          "location":"in Sunnyvale, CA",
           "responsibilities":[
              "I facilitated student learning of the program's curriculum.",
              "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C."
           ],
           "image": "Sunnyvale.jpg",
           "imageType": "action",
-          "alt": "Outdoors of GoDaddy in Sunnyvale"
+          "alt": "Outdoors of GoDaddy in Sunnyvale",
+          "type": "teaching"
        },
        {
           "company":"DoSpace",
           "title":"Lead Instructor: Girls Who Code Club",
           "startDate":"September 2018",
           "endDate":"March 2019",
-          "location":"Omaha, NE",
+          "location":"in Omaha, NE",
           "image": "GWC.png",
           "imageType": "logo",
           "responsibilities":[
              "I taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python.",
              "I helped each student create a capstone."
-          ]
+          ],
+          "type": "teaching"
        },
        {
           "company":"Union Pacific",
           "title":"IT Intern",
           "startDate":"October 2018",
           "endDate":"May 2019",
-          "location":"Omaha, NE",
+          "location":"in Omaha, NE",
           "image": "union-pacific.png",
           "imageType": "logo",
           "responsibilities":[
              "I created portions of web pages that call services to display information.",
              "I modified several services in order to retrieve desired data.",
              "The technologies I used are AngularJS, HTML/CSS, Java, and PLSQL."
-          ]
+          ],
+          "type": "industry"
        },
        {
           "company":"Spreetail",
           "title":"Software Engineering Intern",
           "startDate":"May 2019",
           "endDate":"August 2019",
-          "location":"Omaha, NE",
+          "location":"in Omaha, NE",
           "image": "spreetail.png",
           "imageType": "logo",
           "responsibilities":[
              "I created backend services in .NET and Entity Framework to improve fulfillment center location management."
-          ]
+          ],
+          "type": "industry"
        },
        {
           "company":"Union Pacific",
           "title":"IT Intern",
           "startDate":"September 2019",
           "endDate":"January 2020",
-          "location":"Omaha, NE",
+          "location":"in Omaha, NE",
           "image": "union-pacific.png",
           "imageType": "logo",
           "responsibilities":[
              "I created an Angular8 frontend for managing documents."
-          ]
+          ],
+          "type": "industry"
        },
        {
          "company":"Mutual of Omaha",
          "title":"Technology Intern",
          "startDate":"January 2020",
          "endDate":"May 2020",
-         "location":"Omaha, NE",
+         "location":"in Omaha, NE",
          "image": "mutual-of-omaha.png",
          "imageType": "logo",
          "responsibilities":[
             "I worked on the backend for an application-heathcheck app",
             "I created SFTP tests for the healthcheck application"
-         ]
+         ],
+         "type": "industry"
        },
        {
           "company":"DoSpace",
           "title":"Lead Instructor: Hello Code",
           "startDate":"October 2018",
           "endDate":"Present",
-          "location":"Omaha, NE",
+          "location":"in Omaha, NE",
           "responsibilities":[
              "I create and teach a weekly curriculum for adult students",
              "I teach HTML and CSS basics while answering student questions",
@@ -91,45 +97,73 @@
           ],
           "image":"Teaching-Hello-Code.jpg",
           "imageType": "action",
-          "alt":"Teaching Hello Code"
+          "alt":"Teaching Hello Code",
+          "type": "teaching"
        },
        {
          "company":"Bank of America",
          "title":"Global Technology Analyst Intern",
          "startDate":"June 2020",
          "endDate":"August 2020",
-         "location":"a Remote Internship",
+         "location":"in a Remote Internship",
          "image": "bank-of-america.png",
          "imageType": "logo",
          "responsibilities":[
             "I scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
-         ]
+         ],
+         "type": "teaching"
        },
        {
          "company":"Mutual of Omaha",
          "title":"Global Technology Analyst Intern",
          "startDate":"August 2020",
          "endDate":"April 2021",
-         "location":"a Remote Internship",
+         "location":"in a Remote Internship",
          "image": "mutual-of-omaha.png",
          "imageType": "logo",
          "responsibilities":[
             "Created and Modified HTML and files on client-facing sites",
             "Created FTP testing for app health-check application"
-         ]
+         ],
+         "type": "industry"
        },
        {
-         "company":"Twitch",
+         "company":"Mystery Code Society x UNO Techademy",
+         "title":"Instructor",
+         "startDate":"July 6th, 2021",
+         "endDate":"July 9th, 2021",
+         "location":"in Omaha, NE",
+         "image": "uno-icon.png",
+         "imageType": "logo",
+         "responsibilities":[
+            "Helped run an intense 4-day HTML/CSS course for middle school students",
+            "Aided students in creating and presenting a mini-capstone"
+         ],
+         "type": "teaching"
+       },
+       {
+         "company":"Twitch (Amazon)",
          "title":"Engineering Intern - DevOps",
          "startDate":"May 2021",
-         "endDate":"Current",
-         "location":"a Remote Internship",
+         "endDate":"August 2021",
+         "location":"in a Remote Internship",
          "image": "twitch-logo.png",
          "imageType": "logo",
          "responsibilities":[
             "Create Slack bot for domain delegation using AWS suite",
             "Technologies: Route53, API Gateway, Lambda, EC2, SecretsManager, Terraform"
-         ]
+         ],
+         "type": "industry"
+       }, 
+       {
+         "company":"First National Bank of Omaha",
+         "title":"Technology Developer",
+         "startDate":"September 2021",
+         "endDate":"Current",
+         "location":"Remote - Omaha, NE",
+         "image": "fnbo.png",
+         "imageType": "logo",
+         "type": "industry"
        }
     ]
  }
