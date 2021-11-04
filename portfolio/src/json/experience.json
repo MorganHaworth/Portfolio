@@ -7,8 +7,8 @@
           "endDate":"August 2018",
           "location":"in Sunnyvale, CA",
           "responsibilities":[
-             "I facilitated student learning of the program's curriculum.",
-             "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C."
+             "Facilitated student learning of the program's curriculum",
+             "Taught lessons including Scratch, Python, HTML/CSS, and Arduino C"
           ],
           "image": "Sunnyvale.jpg",
           "imageType": "action",
@@ -24,8 +24,8 @@
           "image": "GWC.png",
           "imageType": "logo",
           "responsibilities":[
-             "I taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python.",
-             "I helped each student create a capstone."
+             "Taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python",
+             "Guided each student in creating a capstone"
           ],
           "type": "teaching"
        },
@@ -38,9 +38,9 @@
           "image": "union-pacific.png",
           "imageType": "logo",
           "responsibilities":[
-             "I created portions of web pages that call services to display information.",
-             "I modified several services in order to retrieve desired data.",
-             "The technologies I used are AngularJS, HTML/CSS, Java, and PLSQL."
+             "Created portions of web pages that call services to display information",
+             "Modified several services in order to retrieve desired data",
+             "The technologies I used are AngularJS, HTML/CSS, Java, and PLSQL"
           ],
           "type": "industry"
        },
@@ -53,7 +53,7 @@
           "image": "spreetail.png",
           "imageType": "logo",
           "responsibilities":[
-             "I created backend services in .NET and Entity Framework to improve fulfillment center location management."
+             "Created backend services in .NET and Entity Framework to improve fulfillment center location management"
           ],
           "type": "industry"
        },
@@ -66,7 +66,7 @@
           "image": "union-pacific.png",
           "imageType": "logo",
           "responsibilities":[
-             "I created an Angular8 frontend for managing documents."
+             "Created an Angular8 frontend for managing documents"
           ],
           "type": "industry"
        },
@@ -79,8 +79,8 @@
          "image": "mutual-of-omaha.png",
          "imageType": "logo",
          "responsibilities":[
-            "I worked on the backend for an application-heathcheck app",
-            "I created SFTP tests for the healthcheck application"
+            "Worked on the backend for an application-heathcheck app",
+            "Created SFTP tests for the healthcheck application"
          ],
          "type": "industry"
        },
@@ -91,9 +91,8 @@
           "endDate":"Present",
           "location":"in Omaha, NE",
           "responsibilities":[
-             "I create and teach a weekly curriculum for adult students",
-             "I teach HTML and CSS basics while answering student questions",
-             "Over the course of five weeks, I help students create a website"
+             "Create and teach a weekly curriculum for adult students",
+             "Teach HTML and CSS basics while answering student questions"
           ],
           "image":"Teaching-Hello-Code.jpg",
           "imageType": "action",
@@ -109,13 +108,13 @@
          "image": "bank-of-america.png",
          "imageType": "logo",
          "responsibilities":[
-            "I scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
+            "Scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
          ],
          "type": "teaching"
        },
        {
          "company":"Mutual of Omaha",
-         "title":"Global Technology Analyst Intern",
+         "title":"Technology Intern",
          "startDate":"August 2020",
          "endDate":"April 2021",
          "location":"in a Remote Internship",
