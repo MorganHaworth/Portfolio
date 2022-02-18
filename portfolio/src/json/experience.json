@@ -1,35 +1,6 @@
 {
     "experience":[
        {
-          "company":"Girls Who Code",
-          "title":"Summer Immersion Program Teaching Assistant",
-          "startDate":"May 2018",
-          "endDate":"August 2018",
-          "location":"in Sunnyvale, CA",
-          "responsibilities":[
-             "Facilitated student learning of the program's curriculum",
-             "Taught lessons including Scratch, Python, HTML/CSS, and Arduino C"
-          ],
-          "image": "Sunnyvale.jpg",
-          "imageType": "action",
-          "alt": "Outdoors of GoDaddy in Sunnyvale",
-          "type": "teaching"
-       },
-       {
-          "company":"DoSpace",
-          "title":"Lead Instructor: Girls Who Code Club",
-          "startDate":"September 2018",
-          "endDate":"March 2019",
-          "location":"in Omaha, NE",
-          "image": "GWC.png",
-          "imageType": "logo",
-          "responsibilities":[
-             "Taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python",
-             "Guided each student in creating a capstone"
-          ],
-          "type": "teaching"
-       },
-       {
           "company":"Union Pacific",
           "title":"IT Intern",
           "startDate":"October 2018",
@@ -41,8 +12,7 @@
              "Created portions of web pages that call services to display information",
              "Modified several services in order to retrieve desired data",
              "The technologies I used are AngularJS, HTML/CSS, Java, and PLSQL"
-          ],
-          "type": "industry"
+          ]
        },
        {
           "company":"Spreetail",
@@ -54,8 +24,7 @@
           "imageType": "logo",
           "responsibilities":[
              "Created backend services in .NET and Entity Framework to improve fulfillment center location management"
-          ],
-          "type": "industry"
+          ]
        },
        {
           "company":"Union Pacific",
@@ -67,8 +36,7 @@
           "imageType": "logo",
           "responsibilities":[
              "Created an Angular8 frontend for managing documents"
-          ],
-          "type": "industry"
+          ]
        },
        {
          "company":"Mutual of Omaha",
@@ -81,23 +49,7 @@
          "responsibilities":[
             "Worked on the backend for an application-heathcheck app",
             "Created SFTP tests for the healthcheck application"
-         ],
-         "type": "industry"
-       },
-       {
-          "company":"DoSpace",
-          "title":"Lead Instructor: Hello Code",
-          "startDate":"October 2018",
-          "endDate":"Present",
-          "location":"in Omaha, NE",
-          "responsibilities":[
-             "Create and teach a weekly curriculum for adult students",
-             "Teach HTML and CSS basics while answering student questions"
-          ],
-          "image":"Teaching-Hello-Code.jpg",
-          "imageType": "action",
-          "alt":"Teaching Hello Code",
-          "type": "teaching"
+         ]
        },
        {
          "company":"Bank of America",
@@ -109,8 +61,7 @@
          "imageType": "logo",
          "responsibilities":[
             "Scraped, analyzed with sentiment analysis, and visualized financial documents using Python libraries"
-         ],
-         "type": "teaching"
+         ]
        },
        {
          "company":"Mutual of Omaha",
@@ -123,22 +74,7 @@
          "responsibilities":[
             "Created and Modified HTML and files on client-facing sites",
             "Created FTP testing for app health-check application"
-         ],
-         "type": "industry"
-       },
-       {
-         "company":"Mystery Code Society x UNO Techademy",
-         "title":"Instructor",
-         "startDate":"July 6th, 2021",
-         "endDate":"July 9th, 2021",
-         "location":"in Omaha, NE",
-         "image": "uno-icon.png",
-         "imageType": "logo",
-         "responsibilities":[
-            "Helped run an intense 4-day HTML/CSS course for middle school students",
-            "Aided students in creating and presenting a mini-capstone"
-         ],
-         "type": "teaching"
+         ]
        },
        {
          "company":"Twitch (Amazon)",
@@ -151,8 +87,7 @@
          "responsibilities":[
             "Create Slack bot for domain delegation using AWS suite",
             "Technologies: Route53, API Gateway, Lambda, EC2, SecretsManager, Terraform"
-         ],
-         "type": "industry"
+         ]
        }, 
        {
          "company":"First National Bank of Omaha",
@@ -161,8 +96,7 @@
          "endDate":"Current",
          "location":"Remote - Omaha, NE",
          "image": "fnbo.png",
-         "imageType": "logo",
-         "type": "industry"
+         "imageType": "logo"
        }
     ]
  }

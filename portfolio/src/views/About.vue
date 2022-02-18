@@ -8,7 +8,7 @@
                 <a href="#" target="_blank">
                     <router-link to="/resume" class="btn" exact href="#">View Resume</router-link>
                 </a>
-                <a href="Resume.docx" download class="btn">Download .docx Resume</a>
+                <a href="ResumeHaworth.docx" download class="btn">Download .docx Resume</a>
                 <div class="items intro m-20">
                     I'm a recent graduate from the University of Nebraska of Omaha with a Bachelor 
                     of Science in Computer Science. I have frontend experience through teaching, 
@@ -17,6 +17,7 @@
                 </div>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Education')">Education</a>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Work-Experience')">Work Experience</a>
+                <a class="porto-button btn btn-pg" @click="scrollMeTo('Instructor-Experience')">Instructor Experience</a>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Projects')">Projects</a>
                 <a class="porto-button btn btn-pg" @click="scrollMeTo('Activities-and-Awards')">Activities and Awards</a>
             </div>
@@ -27,11 +28,11 @@
             <div class="card-body">
                 <h5 class="card-title">{{ item.school }}</h5>
                 
-                <div v-for="(item, index) in item.degrees" :key="'degree'+index">
+                <div v-for="(item, index) in item.degrees" :key="'B'+index">
                     <h6 class="card-subtitle">{{ item.degree }}<span v-if="item.GPA"> - GPA: {{ item.GPA }}</span></h6>
                     <p class="card-subtitle text-muted">{{ item.startDate }} - {{ item.graduationDate }}</p>
                     <ul class="items">
-                        <li v-for="(item, index) in item.responsibilities" :key="'B'+index">
+                        <li v-for="(item, index) in item.responsibilities" :key="'C'+index">
                             {{ item }}
                         </li>
                     </ul>
@@ -50,23 +51,23 @@
 
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <ul class="items">
-                            <li v-for="(item, index) in $options.courses.courses.slice().reverse()" :key="'C'+index">
+                            <li v-for="(item, index) in $options.courses.courses.slice().reverse()" :key="'D'+index">
                                 {{ item.courseName }}
                             </li>
                         </ul>
                     </div>                    
 
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div v-for="(item, index) in $options.involvement.clubs" :key="'D'+index">
+                        <div v-for="(item, index) in $options.involvement.clubs" :key="'E'+index">
                             <div class="row card-body">
                                 <div :class="{'col-md-7': item.image}"><!--class="col-md-7">-->
                                     <div class="card-block">
                                         <h5 class="card-title">{{ item.clubName }}</h5>
-                                        <div v-for="(item, index) in item.positions" :key="'E'+index">
+                                        <div v-for="(item, index) in item.positions" :key="'F'+index">
                                             <p class="card-subtitle">{{item.position}}</p>
                                             <p class="card-subtitle text-muted">{{item.timePeriod}}</p>
                                             <ul class="items">
-                                                <li v-for="(item, index) in item.responsibility" :key="'C'+index">
+                                                <li v-for="(item, index) in item.responsibility" :key="'G'+index">
                                                     {{ item }}
                                                 </li>
                                             </ul>
@@ -88,16 +89,7 @@
             </div>
         </div>
         <div ref="Work-Experience" class="text-left sectionTitle">Work Experience</div>
-        <!-- <div id="exp_radio">
-            <input class="exp_radio_butt" id="all" checked type="checkbox" v-model="experienceChoice" value="industry">
-            <label for="all">All</label>
-            <input class="exp_radio_butt" id="industry" type="checkbox" v-model="experienceChoice" value="industry">
-            <label for="industry">Industry</label>
-            <input class="exp_radio_butt" id="teaching" type="checkbox" v-model="experienceChoice" value="teaching">
-            <label for="teaching">Teaching</label>  
-            <span>{{experienceChoice}}</span> 
-        </div> -->
-        <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'F'+index">
+        <div class="card text-left" v-for="(item, index) in $options.experience.experience.slice().reverse()" :key="'H'+index">
             <div v-if="item.image" class="row card-body">
                 <div :class="item.imageType == 'logo' ? 'col-md-9' : 'col-md-7'">
                     <div class="card-block">
@@ -106,7 +98,7 @@
                         <p class="card-subtitle text-muted">{{ item.startDate }} - 
                             {{ item.endDate }} {{ item.location }}</p>
                         <ul class="items">
-                            <li v-for="(item, index) in item.responsibilities" :key="'G'+index">
+                            <li v-for="(item, index) in item.responsibilities" :key="'I'+index">
                                 {{ item }}
                             </li>
                         </ul>
@@ -126,7 +118,7 @@
                 <p class="card-subtitle text-muted">{{ item.startDate }} - 
                             {{ item.endDate }} {{ item.location }}</p>
                 <ul class="items">
-                    <li v-for="(item, index) in item.responsibilities" :key="'H'+index">
+                    <li v-for="(item, index) in item.responsibilities" :key="'J'+index">
                         {{ item }}
                     </li>
                 </ul>
@@ -134,7 +126,7 @@
         </div>
 
         <div ref="Projects" class="text-left sectionTitle">Projects</div>
-        <div class="card text-left" v-for="(item, index) in $options.projects.projects" :key="'I'+index">
+        <div class="card text-left" v-for="(item, index) in $options.projects.projects" :key="'K'+index">
             <div class="row card-body">
                 <div class="col-md-7">
                     <div class="card-block">
@@ -145,10 +137,10 @@
                         <div style="display: flex; flex-wrap: wrap;">
                             <h6 class="card-subtitle text-muted col-xs-6 my-auto">Technologies:</h6>
                             <button v-for="(item, index) in item.technologies" 
-                                class="btn btn-tech col-xs-6" :key="'Gg'+index">{{ item }}</button>
+                                class="btn btn-tech col-xs-6" :key="'L'+index">{{ item }}</button>
                         </div>
                         <div v-if="item.buttons" class="text-center">
-                            <a v-for="(item, index) in item.buttons" :key="'Ll'+index"
+                            <a v-for="(item, index) in item.buttons" :key="'M'+index"
                                 :href="item.src" target="_blank" class="btn">{{ item.label }}</a>
                         </div>
                     </div>
@@ -158,9 +150,65 @@
                 </div>
             </div>
         </div>
+        <div ref="Instructor-Experience" class="text-left sectionTitle">Instructor Experience</div>
+        <div class="card text-left" v-for="(item, index) in $options.instructor.instruction" :key="'N'+index">
+            <div v-if="hasImage(item)" class="row card-body">
+                <div class="col-md-7">
+                    <div class="card-block">
+                        <h5 class="card-title">{{ item.company }}</h5>
+                        <div v-for="(item, index) in item.positions" :key="'O'+index">
+                            <h6 class="card-subtitle">{{ item.title }}</h6>
+                            <p v-if="!item.dates" class="card-subtitle text-muted">{{ item.startDate }} - 
+                                {{ item.endDate }} in {{ item.location }}</p>
+                            <div v-if="item.dates">
+                                <span class="card-subtitle text-muted dates">{{ item.location }}:</span>
+                                <span v-for="(item, index) in item.dates" :key="'P'+index"
+                                    class="card-subtitle text-muted dates">
+                                    {{ item }}
+                                </span>
+                            </div>
+                                <ul class="items">
+                                <li v-for="(item, index) in item.responsibilities" :key="'Q'+index">
+                                    {{ item }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 center-image-container">
+                    <div class="card-block image-container">
+                        <div v-for="(image, index) in getImages(item)" :key="'R'+index">
+                            <img :src="getUrl(image.image)" class="card-img images" :alt="image.alt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div v-if="!hasImage(item)" class="card-body">
+                <div class="card-block">
+                    <h5 class="card-title">{{ item.company }}</h5>
+                    <div v-for="(item, index) in item.positions" :key="'S'+index">
+                        <h6 class="card-subtitle">{{ item.title }}</h6>
+                        <p v-if="!item.dates" class="card-subtitle text-muted">{{ item.startDate }} - 
+                            {{ item.endDate }} {{ item.location }}</p>
+                        <div v-if="item.dates">
+                            <span class="card-subtitle text-muted dates">{{ item.location }}:</span>
+                            <span v-for="(item, index) in item.dates" :key="'T'+index"
+                                class="card-subtitle text-muted dates">
+                                {{ item }}
+                            </span>
+                        </div>
+                            <ul class="items">
+                            <li v-for="(item, index) in item.responsibilities" :key="'U'+index">
+                                {{ item }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div ref="Activities-and-Awards" class="text-left sectionTitle">Activities and Awards</div>
-        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'J'+index">
+        <div class="card text-left" v-for="(item, index) in $options.activities.activities" :key="'V'+index">
 
             <div v-if="!item.image" class="card-body">
                 <h5 class="card-title">{{ item.activity }}</h5>
@@ -169,12 +217,12 @@
                 </h6>
                 <p class="card-subtitle text-muted">{{ item.date }}</p>
                 <ul class="items">
-                    <li v-for="(item, index) in item.description" :key="'K'+index">
+                    <li v-for="(item, index) in item.description" :key="'W'+index">
                         {{ item }}
                     </li>
                 </ul>
                 <div v-if="item.buttons">
-                    <a v-for="(item, index) in item.buttons" :key="'L'+index"
+                    <a v-for="(item, index) in item.buttons" :key="'X'+index"
                         :href="item.src" target="_blank" class="btn">{{ item.label }}</a>
                 </div>
             </div>
@@ -188,12 +236,12 @@
                         </h6>
                         <p class="card-subtitle text-muted">{{ item.date }}</p>
                         <ul class="items">
-                            <li v-for="(item, index) in item.description" :key="'M'+index">
+                            <li v-for="(item, index) in item.description" :key="'Y'+index">
                                 {{ item }}
                             </li>
                         </ul>
                         <div v-if="item.buttons" class="text-center">
-                            <a v-for="(item, index) in item.buttons" :key="'N'+index" target="_blank" 
+                            <a v-for="(item, index) in item.buttons" :key="'Z'+index" target="_blank" 
                                 :href="item.src" class="btn">{{ item.label }}</a>
                         </div>
                     </div>
@@ -210,6 +258,24 @@
 </template>
 
 <style scoped>
+.center-image-container {
+    position: relative;
+}
+
+.image-container {
+    position: absolute;
+    padding: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+}
+
+.dates {
+    margin-right: 20px;
+}
+
 .btn {
     color: white;
     background-color: rgb(72, 190, 181);
@@ -290,6 +356,10 @@
 .card {
     border: none;
 }
+
+.card-body {
+    padding: 15px;
+}
 </style>
 
 <script>
@@ -297,34 +367,34 @@
     import experience from '../json/experience.json'
     import education from '../json/education.json'
     import courses from '../json/courses.json'
-    import teaching from '../json/teaching.json'
     import involvement from '../json/involvement.json'
     import projects from '../json/projects.json'
+    import instructor from '../json/instructor.json'
 
     export default {
         activities: activities, 
         experience: experience,
         education: education,
-        teaching: teaching,
         projects: projects,
         courses: courses,
         involvement: involvement,
-        // computed: {
-        //     filteredExperience(){
-        //         return experience
-        //     }
-        // },
-        //     experienceChoice: []
+        instructor: instructor,
             
         methods: {
             scrollMeTo(refName) {
-            var element = this.$refs[refName];
-            var top = element.offsetTop - 54;
+                var element = this.$refs[refName];
+                var top = element.offsetTop - 54;
 
-            window.scrollTo({top: top, left: 0, behavior: 'smooth'});
-        },
+                window.scrollTo({top: top, left: 0, behavior: 'smooth'});
+            },
             getUrl: function(file) {
                 return require('../assets/' + file)
+            },
+            hasImage(item) {
+                return item.positions.filter(e => e.hasOwnProperty('image')).length > 0
+            },
+            getImages(item) {
+                return item.positions.filter(e => e.hasOwnProperty('image')).map(({image, alt}) => ({image, alt}))
             }
         },
         name: 'about',
