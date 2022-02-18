@@ -1,0 +1,111 @@
+{
+    "instruction":[
+        {
+            "company": "Metropolitan Community College",
+            "positions": [
+                {
+                    "title":"Corporate Trainer: Code School",
+                    "dates": ["October 2021 - Present"],
+                    "location":"Remote",
+                    "responsibilities":[
+                        "Host front-end workshops: HTML, CSS, and Javascript & VueJS Intro"
+                    ]
+                }
+            ]
+        },
+        {
+          "company":"Do Space",
+          "positions": [
+            {
+                "title":"Lead Instructor: Hello Code",
+                "startDate":"October 2018",
+                "endDate":"Present",
+                "location":"Omaha, NE and Remote",
+                "responsibilities":[
+                    "I create and teach a weekly curriculum for adult students",
+                    "I teach HTML and CSS basics while answering student questions",
+                    "Over the course of five weeks, I help students create a website"
+                ],
+                "image":"Teaching-Hello-Code.jpg",
+                "alt":"Teaching Hello Code"
+            },
+            {
+                "title": "Instructor: JavaScript Basics",
+                "dates": [
+                    "December 2020", "May 2021", "August 2021", "January 2022"
+                ],
+                "location": "Remote",
+                "responsibilities": [
+                    "Teach and demonstrate JavaScript basics in 1 - 1.5hr webinar format",
+                    "Provide mini coding projects showing uses of JavaScript"
+                ]
+            },
+            {
+                "title": "Instructor: Intro to HTML & CSS",
+                "dates": [
+                    "September 2021", "October 2021", "January 2022", "February 2022"
+                ],
+                "location": "Remote",
+                "responsibilities": [
+                    "Teach and demonstrate HTML and CSS in 1 - 1.5hr workshop format", 
+                    "Create simple website complete with HTML & CSS fundamentals"
+                ]
+            },
+            {
+                "title":"Lead Instructor: Girls Who Code Club",
+                "startDate":"September 2018",
+                "endDate":"March 2019",
+                "location":"Omaha, NE",
+                "responsibilities":[
+                    "I taught the basics of computer science: conditionals, functions, variables, loops, objects, and more using Python.",
+                    "I helped each student create a capstone."
+                ]
+            }
+          ]
+       },
+       {
+            "company": "LinkedIn Learning",
+            "positions": [
+                {
+                    "title":"Skills Assessment Reviewer: HTML",
+                    "dates": ["December 2021"],
+                    "location":"Remote",
+                    "responsibilities":[
+                        "Rank, assess, and provide feedback/corrections for hundreds of HTML knowledge quiz questions"
+                    ]
+                }
+            ]
+        },
+        {
+            "company": "Girls Who Code",
+            "positions": [
+                {
+                    "title":"Summer Immersion Program Teaching Assistant",
+                    "startDate":"May 2018",
+                    "endDate":"August 2018",
+                    "location":"Sunnyvale, CA",
+                    "responsibilities":[
+                        "I facilitated student learning of the program's curriculum",
+                        "I taught lessons including Scratch, Python, HTML/CSS, and Arduino C"
+                    ],
+                    "image": "Sunnyvale.jpg",
+                    "alt": "Outdoors of GoDaddy in Sunnyvale"
+                }
+            ]
+        },
+        {
+            "company": "Mystery Code Society & UNO Techademy",
+            "positions": [
+                {
+                    "title":"Teacher: HTMelle",
+                    "dates": ["July 2021"],
+                    "location":"Omaha, NE",
+                    "responsibilities":[
+                        "Helped run an intense 4-day HTML/CSS course for middle school students",
+                        "Aided students in creating and presenting a mini-capstone"
+                    ]
+                }
+            ]
+        }
+    ]
+ }

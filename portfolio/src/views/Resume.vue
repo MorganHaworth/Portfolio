@@ -1,7 +1,7 @@
 <template>
     <div id="frameContainer">
-        <object data="Resume.pdf" type="application/pdf" height="100%" width="100%">
-            <iframe src="Resume.pdf" height="100%" width="100%"></iframe>
+        <object data="ResumeHaworth.pdf" type="application/pdf" height="100%" width="100%">
+            <iframe src="ResumeHaworth.pdf" height="100%" width="100%"></iframe>
         </object>
     </div>
 </template>
@@ -17,7 +17,7 @@
 export default {
     methods: {
         getResume: function() {
-            return './assets/Resume.pdf'
+            return './assets/ResumeHaworth.pdf'
         }
     },
     name: 'resume',
