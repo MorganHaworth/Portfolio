@@ -93,10 +93,27 @@
          "company":"First National Bank of Omaha",
          "title":"Technology Developer",
          "startDate":"September 2021",
-         "endDate":"Current",
+         "endDate":"March 2022",
          "location":"Remote - Omaha, NE",
          "image": "fnbo.png",
-         "imageType": "logo"
-       }
-    ]
- }
+         "imageType": "logo",
+         "responsibilities":[
+            "Write React components and tests for consumer-facing app",
+            "Write Java endpoints with Spring"
+         ]
+       },
+       {
+         "company":"Twitch (Amazon)",
+         "title":"Systems Development Engineer",
+         "startDate":"April 2022",
+         "endDate":"August 2021",
+         "location":"in a Remote Position",
+         "image": "twitch-logo.png",
+         "imageType": "logo",
+         "responsibilities":[
+           "Migrate python application to new AWS infrastructure",
+           "Technologies: Terraform, AWS Suite, Ansible"
+         ]
+       }, 
+    ]   
+ }  
