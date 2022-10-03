@@ -114,6 +114,6 @@
            "Migrate python application to new AWS infrastructure",
            "Technologies: Terraform, AWS Suite, Ansible"
          ]
-       }, 
+       }
     ]   
  }  
