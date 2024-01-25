@@ -107,12 +107,15 @@
          "title":"Systems Development Engineer",
          "startDate":"April 2022",
          "endDate":"Current",
-         "location":"in a Remote Position",
+         "location":"San Francisco",
          "image": "twitch-logo.png",
          "imageType": "logo",
          "responsibilities":[
+           "React frontend lead for internal dashboard application rewrite",
+           "Create flow to sync employee attribute data between Twitch and Amazon systems using AWS services",
            "Migrate python application to new AWS infrastructure",
-           "Technologies: Terraform, AWS Suite, Ansible"
+           "Create data flow and architect diagrams for AWS systems to facilitate conversations regarding future use",
+           "Technologies: AWS CDK, TypeScript, Python, Terraform, Ansible"
          ]
        }
     ]   
